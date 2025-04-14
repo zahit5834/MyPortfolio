@@ -1,0 +1,33 @@
+﻿@model Experience
+@{
+    ViewData["Title"] = "UpdateExperience";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+<div class="container-fluid">
+    <h3>Deneyim Güncelleme Sayfası</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="card-sub">
+                Deneyimlerle İlgili İşlemleri Aşağıdaki Panelden Yapabilirsiniz
+            </div>
+            <hr />
+            <form method="post">
+                <input type="hidden" asp-for="ExperienceId" class="form-control">
+                <label>Deneyim Başlığı & Firma Bilgisi</label>
+                <input type="text" asp-for="Head" class="form-control">
+                <br />
+                <label>Posizyon</label>
+                <input type="text" asp-for="Title" class="form-control">
+                <br />
+                <label>Tarih Aralığı</label>
+                <input type="text" asp-for="Date" class="form-control">
+                <br />
+                <label>Açıklama</label>
+                <textarea rows="4" class="form-control" asp-for="Description"></textarea>
+                <br />
+                <button class="btn btn-warning">Deneyimi Güncelle</button>
+            </form>
+
+        </div>
+    </div>
+</div>

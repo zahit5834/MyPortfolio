@@ -1,0 +1,26 @@
+﻿@model Message
+@{
+    ViewData["Title"] = "MessageDetail";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="container-fluid">
+    <h3>Mesaj Detayları</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="card-sub">
+                <h4>Gönderen: @Model.NameSurname </h4>
+                <h6>Email: @Model.Email</h6>
+                <h6>Tarih: @Model.SendDate.ToString("dd/MMM/yyyy HH:mm")</h6>
+                <hr />
+            </div>
+            <h4>Konu: @Model.Subject</h4>
+            <br />
+            <blockquote>
+                <p class="blockquote blockquote-primary">
+                    @Model.MessageDetail
+                </p>
+            </blockquote>
+        </div>
+    </div>
+</div>

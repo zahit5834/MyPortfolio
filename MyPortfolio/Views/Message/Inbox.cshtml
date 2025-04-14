@@ -1,0 +1,50 @@
+﻿@model List<Message>
+@{
+    ViewData["Title"] = "Inbox";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="container-fluid">
+    <h3>Gelen Mesajlar</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="card-sub">
+                Gelen Mesajlar İle İlgili İşlemleri Aşağıdaki Panelden Yapabilirsiniz
+            </div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Gönderen</th>
+                        <th scope="col">Konu</th>
+                        <th scope="col">Tarih</th>
+                        <th scope="col">Mesajı Aç</th>
+                        <th scope="col">Durum</th>
+                        <th scope="col">Sil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.MessageId</td>
+                            <td>@item.NameSurname</td>
+                            <td>@item.Subject</td>
+                            <td>@item.SendDate.ToString("dd/MMM/yyyy HH:mm")</td>
+                            <td><a href="/Message/MessageDetail/@item.MessageId" class="btn btn-warning">Mesajı Aç</a></td>
+                            @if (item.IsRead)
+                            {
+                                <td><a href="/Message/ChangeIsRead/@item.MessageId" class="btn btn-outline-primary btn-round">Okunmadı Olarak İşaretle</a></td>
+                            }
+                            else
+                            {
+                                <td><a href="/Message/ChangeIsRead/@item.MessageId" class="btn btn-outline-warning btn-round">Okundu Olarak İşaretle</a></td>
+                            }
+                            <td><a href="/Message/DeleteMessage/@item.MessageId" class="btn btn-danger">Sil</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
