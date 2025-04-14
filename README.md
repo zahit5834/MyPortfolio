@@ -1,30 +1,31 @@
 # MyPortfolio
 
-MyPortfolio, ASP.NET Core MVC kullanılarak geliştirilmiş bir portföy yönetim uygulamasıdır.  
-Kullanıcıların projelerini ekleme, düzenleme ve silme işlemlerini gerçekleştirebileceği bu uygulama, temiz mimari prensiplerini benimseyerek Repository Pattern ve Unit of Work tasarım desenlerini kullanır.  
-Bu sayede uygulama, ölçeklenebilirlik ve sürdürülebilirlik açısından avantaj sağlar.
+MyPortfolio, kişisel portföyünüzü modern ve şık bir arayüzle sergilemenizi sağlayan bir web uygulamasıdır. Bu proje, yazılım geliştiriciler, tasarımcılar veya işlerini tanıtmak isteyen herkes için uygundur.
 
 ## 🚀 Özellikler
 
-- **Proje Yönetimi**: Kullanıcılar, portföylerine yeni projeler ekleyebilir, mevcut projeleri düzenleyebilir veya silebilirler.
-- **CRUD İşlemleri**: Projeler üzerinde Tam Ekleme, Okuma, Güncelleme ve Silme işlemleri desteklenir.
-- **Repository & Unit of Work**: Veri erişimi için bu tasarım desenleri kullanılarak kod organizasyonu ve veri yönetimi iyileştirilmiştir.
-- **Kullanıcı Kimlik Doğrulama**: Kullanıcılar, güvenli bir kimlik doğrulama sistemi ile portföylerini yönetebilirler.
-- **Duyarlı Arayüz**: Modern web teknolojileri kullanılarak oluşturulan kullanıcı arayüzü, sezgisel ve kullanıcı dostudur.
+- Ana sayfa üzerinde tanıtım alanı
+- Hakkımda bölümü
+- Projelerim sayfası (projeleri dinamik olarak listeleme)
+- İletişim formu
+- Admin paneli ile içerik yönetimi
+- Kullanıcı dostu ve responsive tasarım
+- Veritabanı desteği ile içerik güncellenebilirlik
 
 ## 🛠️ Kullanılan Teknolojiler
 
-- **ASP.NET Core MVC** – Model-View-Controller deseni ile web uygulaması geliştirme
-- **Entity Framework Core** – Veri erişimi ve SQL Server veritabanı ile etkileşim için ORM
-- **SQL Server** – Proje verilerini depolamak için veritabanı yönetim sistemi
-- **HTML, CSS, JavaScript** – Etkileşimli kullanıcı arayüzü oluşturmak için ön yüz teknolojileri
-- **Bootstrap** – Duyarlı ve mobil öncelikli tasarım için CSS framework
+- ASP.NET Core MVC
+- Entity Framework Core
+- MSSQL
+- Bootstrap
+- jQuery
 
-## 📁 Proje Yapısı
-
-Proje, MVC (Model-View-Controller) mimarisini takip eder ve aşağıdaki bileşenleri içerir:
-
-- `Models/` – Veri yapısını temsil eden sınıflar (örneğin, Proje, Kullanıcı modelleri)
-- `Views/` – Kullanıcıya bilgi sunumunu yöneten görünümler (örneğin, proje listesi, detaylar)
-- `Controllers/` – Uygulama mantığını yöneten sınıflar
-- `Repositories/` – Veritabanı işlemlerini gerçekleştiren katman
+## 📸 Ekran Görüntüleri
+Görsel-1
+> ![image](https://github.com/user-attachments/assets/df9abe7b-c0c3-4410-b50a-9e0c02e9b7f0)
+Görsel-2
+> ![image](https://github.com/user-attachments/assets/d8368abc-4fa1-4ffe-b943-06c5941481cd)
+Görsel-3
+> ![image](https://github.com/user-attachments/assets/d1ef8bbf-be5d-4256-9910-e4ac42ae4658)
+Görsel-4
+> ![image](https://github.com/user-attachments/assets/ec194ed8-7f8e-4bec-962f-c307002c9b11)
